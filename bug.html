@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Incorrect use of innerHTML to append content dynamically
+    document.getElementById("myDiv").innerHTML += "<p>This is appended text.</p>";
+    // This will overwrite the previous content instead of appending
+    document.getElementById("myDiv").innerHTML = "<p>This overwrites previous content.</p>";
+  </script>
+</body>
+</html>
