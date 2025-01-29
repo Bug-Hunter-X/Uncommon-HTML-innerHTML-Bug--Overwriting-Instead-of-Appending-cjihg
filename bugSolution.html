@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Correct way to append content using insertAdjacentHTML
+    document.getElementById("myDiv").insertAdjacentHTML('beforeend', "<p>This is appended text.</p>");
+    document.getElementById("myDiv").insertAdjacentHTML('beforeend', "<p>This is more appended text.</p>");
+  </script>
+</body>
+</html>
